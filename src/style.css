@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  padding: 10px;
+  margin: 0 23%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  color: #fff;
+  font-size: 20px;
+  width: 50vw;
+  height: 35vh;
+  margin-top: 3%;
+  margin-left: 25%;
+  background-color: #000;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.row {
+  display: flex;
+}
+
+button {
+  flex: 0 0 auto;
+  vertical-align: bottom;
+  display: inline-block;
+  margin: 0.4vw;
+  padding: 0.4vw 0.4vw;
+  min-width: 2.3vw;
+  min-height: 3vw;
+  font-size: 1.2vw;
+  line-height: 1.2vw;
+  background-color: #8e66eb;
+  color: #f7f7f7;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: inset 0 -0.4vw #604c8b;
+  transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+button:hover {
+  background-color: #7660aa;
+}
+button.active {
+  background-color: #3b1496;
+  transform: scale(0.95);
+}
+
+.key-special {
+  min-width: 4vw;
+}
+
+.shift-right {
+  min-width: 5.8vw;
+}
+
+.shift-left {
+  min-width: 4.5vw;
+}
+
+.key-backspace {
+  min-width: 9vw;
+}
+
+.key-tab {
+  min-width: 8vw;
+}
+
+.key-caps {
+  min-width: 7vw;
+  padding: 0.8vw 0;
+}
+
+.key-space {
+  min-width: 19.3vw;
+}
+
+.key-enter {
+  min-width: 7.5vw;
+}
+
+.key-left,
+.key-down,
+.key-right {
+  min-width: 2vw;
+}
+
+.key-up {
+  min-width: 2.5vw;
+}
+
+.key-ctrl {
+  min-width: 3.5vw;
+}
+
+.key-alt {
+  min-width: 3.5vw;
+}
